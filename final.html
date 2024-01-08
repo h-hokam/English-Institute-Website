@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container-fluid bg-dark">
+    <div class="row">
+        <div class="col-6 mx-auto d-flex">
+            <div class="nav navbar-expand d-flex justify-content-between">
+                <button type="button" class="btn mx-auto d-block" data-toggle="modal" data-target="#hoda"><a href="#" class="nav-link text-white">log in</a></button>
+                <div class="modal fade" id="hoda">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-white">
+                                <h2 class="modal-title font-italic text-dark mx-auto">welcome to my site</h2>
+                                <button type="button" class="btn offset-1" data-dismiss="modal">x</button>
+                            </div>
+                            <div class="modal-body bg-primary text-white">
+                                <form action="#">
+                                    <div class="form-group">
+                                        <label>Username</label>
+                                        <input type="text" class="form-control" placeholder="please enter your username">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>password</label>
+                                        <input type="password" class="form-control" placeholder="please enter your password">
+                                    </div>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="customfile">
+                                        <label class="custom-file-label">choose file</label>
+                                    </div>
+                                    <input type="radio" name="gender">male
+                                    <br>
+                                    <input type="radio" name="gender">female
+                                </form>
+                            </div>
+                            <div class="modal-footer bg-white">
+                                <button type="button" class="btn btn-success mx-auto d-block" data-dismiss="modal">Sign in</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn mx-auto d-block" data-toggle="modal" data-target="#hoda2"><a href="#" class="nav-link text-white">about us</a></button>
+                <div class="modal fade" id="hoda2">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-primary">
+                                <h2 class="modal-title text-dark mx-auto">Please read more about us</h2>
+                                <button type="button" class="btn offset-1" data-dismiss="modal">x</button>
+                            </div>
+                            <div class="modal-body bg-white text-dark">
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua.
+                                </p>
+                                <p>Lorem ipsum dolor sit amet,
+                                    <span class="badge badge-secondary badge-pill">consectetur adipiscing</span> elit,
+                                    sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua.
+                                </p>
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit,
+                                    sed do eiusmod <span class="badge badge-warning">tempor incididunt</span>
+                                    ut labore et dolore magna aliqua.
+                                </p>
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua.
+                                </p>
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua.
+                                </p>
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua.
+                                </p>
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua.
+                                </p>
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary mx-auto d-block" data-dismiss="modal">join us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="#" class="nav-link mx-auto d-block dropdown-toggle mt-3 text-white btn-outline-primary" data-toggle="dropdown">Services</a>
+                    <div class="dropdown-menu bg-primary">
+                        <a href="#" class="dropdown-item">Adult class</a>
+                        <a href="#" class="dropdown-item">Kids class</a>
+                        <a href="#" class="dropdown-item">Conversation class</a>
+                        <a href="#" class="dropdown-item">Writing class</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-link mx-auto d-block mt-3 text-white btn-outline-primary">Home</a>
+            </div>
+        </div>
+        <div class="col-3 mt-3">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary btn-success text-white" type="button">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 offset-3 mt-5">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="final_images/english.jpg" alt="flower">
+                        <div class="carousel-caption">
+                            <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <button class="btn btn-danger text-white" type="button">more details</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="final_images/applegirl.jpg" alt="flower">
+                        <div class="carousel-caption">
+                            <h3 class="text-success">Creative Class</h3>
+                            <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <button class="btn btn-success text-white" type="button">more details</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="final_images/blueteacher2.jpg" alt="flower">
+                        <div class="carousel-caption">
+                            <h3 class="text-white">Kids Class</h3>
+                            <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <button class="btn btn-warning text-white" type="button">more details</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="final_images/blackteacher2.jpg" alt="flower">
+                        <div class="carousel-caption">
+                            <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <button class="btn btn-primary text-white" type="button">more details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10 offset-1 mt-5">
+            <div class="card-deck">
+            <!--the first card-->
+                <div class="card">
+                    <div class="card-header bg-warning">
+                        <h2 class="card-title text-center">vocab class</h2>
+                        <h5 class="card-subtitle text-center">tutorial</h5>
+                    </div>
+                    <img src="final_images/vocab.jpg" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary text-white mx-auto d-block" type="button">Read more</button>
+                    </div>
+                </div>
+                <!--the second card-->
+                <div class="card">
+                    <div class="card-header text-dark btn-outline-danger">
+                        <h2 class="card-title text-center">free class</h2>
+                        <h5 class="card-subtitle text-center">tutorial</h5>
+                    </div>
+                    <img src="final_images/greenenglish2.jpg" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-danger text-white mx-auto d-block" type="button">Read more</button>
+                    </div>
+                </div>
+                <!--the third card-->
+                <div class="card">
+                    <div class="card-header text-dark btn-outline-success">
+                        <h2 class="card-title text-center">grammar class</h2>
+                        <h5 class="card-subtitle text-center">tutorial</h5>
+                    </div>
+                    <img src="final_images/grammar2.jpg" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-success text-white mx-auto d-block" type="button">Read more</button>
+                    </div>
+                </div>
+                <!--the fourth card-->
+                <div class="card">
+                    <div class="card-header text-dark btn-outline-primary">
+                        <h2 class="card-title text-center">speaking class</h2>
+                        <h5 class="card-subtitle text-center">tutorial</h5>
+                    </div>
+                    <img src="final_images/dressteacher2.jpg" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-secondary text-white mx-auto d-block" type="button">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10 offset-1 bg-white mt-5 rounded">
+            <h1 class="text-primary text-center font-italic">learn English every day</h1>
+            <p class="text-dark text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.
+            </p>
+            <p class="text-dark text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="text-dark text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="btn btn-success text-white mx-auto d-block" type="button"data-toggle="collapse" data-target="#hoda3">more details</button>
+            <div class="collapse" id="hoda3">
+                <p class="text-dark text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.
+                </p>
+                <p class="text-dark text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p class="text-dark text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10 offset-1 mt-5">
+            <div class="media bg-dark">
+                <img src="final_images/blackteacher3.jpg" alt="nuggets" class="img-fluid">
+                <div class="media-body">
+                    <h2 class="text-center text-success">New class</h2>
+                    <h5 class="text-center text-white">conversation</h5>
+                    <p class="text-center text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        <span class="badge badge-warning">tempor incididunt</span>
+                        ut labore et dolore magna aliqua.
+                    </p>
+                    <p class="text-center text-white">
+                        Lorem ipsum dolor sit amet,
+                        <span class="badge badge-danger badge-pill">consectetur adipiscing</span>
+                        elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 offset-4 mt-5">
+            <img src="final_images/graduate.jpg" alt="graguates" class="img-fluid">
+            <h2 class="text-info text-center">Be successful</h2>
+            <p class="text-primary text-center">
+                Lorem ipsum dolor sit amet. Ad rerum iste et enim itaque nam aliquam eaque est consectetur consequuntur sed omnis voluptatem qui dolor nobis. Aut sunt dolore et corrupti enim eum veritatis quia ut voluptate voluptatem et nostrum dolor sed tempora sunt.
+
+                Ab mollitia similique et assumenda quis et veritatis quaerat qui laboriosam Quis non fuga omnis! In asperiores sequi rem voluptas modi 33 delectus quasi non molestiae itaque hic animi odio ut quia voluptates ea culpa molestias.
+
+                Est alias sint sit quidem quidem est dolores eligendi. Est autem necessitatibus At natus eligendi aut nihil dignissimos est optio iure ad explicabo ipsum? Eos modi quia qui impedit aspernatur a asperiores omnis a libero quidem est impedit molestias aut fugit galisum.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-5">
+            <div class="alert alert-info alert-dismissible">
+                <p class="text-center">Do you want <a href="final2.html">Read more</a> about other courses??</p>
+                <span class="close" data-dismiss="alert">x</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="offset-5 col-6 mt-5">
+            <div class="nav">
+                <div class="pagination">
+                    <a href="#" class="page-item page-link">Previous</a>
+                    <a href="#" class="page-item page-link">Page1</a>
+                    <a href="#" class="page-item page-link">Page2</a>
+                    <a href="#" class="page-item page-link">Page3</a>
+                    <a href="#" class="page-item page-link">Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script src="bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+<script src="jquery/jquery-3.7.1.min.js"></script>
+<script src="bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
