@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+<div class="container-fluid bg-light">
+    <div class="row">
+        <div class="col-8 offset-2 mt-5">
+            <table class="table table-hover table-borderless table-striped">
+                <thead>
+                <tr>
+                    <th>speaking</th>
+                    <th>writing</th>
+                    <th>listening</th>
+                    <th>reading</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>pre ielts1</td>
+                    <td>pre ielts2</td>
+                    <td>pre ielts3</td>
+                    <td>pre ielts4</td>
+                </tr>
+                <tr>
+                    <td>inside book1</td>
+                    <td>inside book3</td>
+                    <td>inside book8</td>
+                    <td>overbook</td>
+                </tr>
+                <tr>
+                    <td>actual</td>
+                    <td>collin</td>
+                    <td>interchange</td>
+                    <td>real book</td>
+                </tr>
+                <tr>
+                    <td>actual</td>
+                    <td>magazine</td>
+                    <td>for corners</td>
+                    <td>real book</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6 offset-3 mt-5 mb-5">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center" data-toggle="tooltip" data-placement="left" title="this is test">
+                    <a href="#">speaking class</a>
+                    <span class="ml-0 badge badge-pill badge-success">10</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center" data-toggle="tooltip" data-placement="right" title="this is test">
+                    <a href="#">writing class</a>
+                    <span class="offset-3">_</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center" data-toggle="tooltip" data-placement="bottom" title="this is test">
+                    <a href="#">reading class</a>
+                    <span class="offset-3 badge badge-pill badge-warning">15</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center" data-toggle="tooltip" data-placement="top" title="this is test">
+                    <a href="#">listening class</a>
+                    <span class="offset-3 text-primary font-weight-bold">Waiting</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+<script src="jquery/jquery-3.7.1.min.js"></script>
+<script src="bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(function (){
+        $(`[data-toggle="tooltip"]`).tooltip();
+    })
+</script>
+</body>
+</html>
